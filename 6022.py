@@ -1,2 +1,4 @@
-s = input()
-print(s[:2], s[2:4], s[4:])
+# h, m, s = input().split(':')
+# print(m)
+
+print(input().split(":")[1])
