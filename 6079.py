@@ -15,11 +15,11 @@ for i in range(1, num+1):
 print(n)
 
 # 정답 풀이
-# n = int(input())
-# s = 0
-# t = 0
+n = int(input())
+s = 0
+t = 0
 
-# while s<n:
-#     t += 1
-#     s += t
-# print(t)
+while s<n:
+    t += 1
+    s += t
+print(t)
