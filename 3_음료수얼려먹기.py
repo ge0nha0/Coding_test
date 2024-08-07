@@ -17,10 +17,10 @@ def dfs(x,y):
         if graph[x][y] ==0:
               graph[x][y] = 1
             # 상하좌우 위치 재귀 호출
-              dfs(x-1, y)
-              dfs(x, y-1)
-              dfs(x+1, y)
-              dfs(x, y+1)
+              dfs(x-1, y) # 상
+              dfs(x, y-1) # 좌 
+              dfs(x+1, y) # 하
+              dfs(x, y+1) # 우
               
               return True
         return False 
