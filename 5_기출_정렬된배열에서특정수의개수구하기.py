@@ -2,25 +2,7 @@
 # 가장 마지막 위치를 찾는 이진 탐색 함수
 
 # 첫번째 풀이 -> 라이브러리 사용
-from bisect import bisect_left, bisect_right
-import sys 
-
-# 값이 [# 값이 [left_value, right_value] 범위에 있는 개수, right_value]인 데이터의 개수를 반환하는 함수
-def count_by_range(array, left_value, right_value):
-    left_idx = bisect_left(array, left_value)
-    right_idx = bisect_right(array, right_value)
-    return right_idx - left_idx
-
-n, x = map(int, sys.stdin.readline().split()) # 원소 개수, 탐색값
-array = list(map(int, sys.stdin.readline().split())) # n개의 원소
-
-# x인 원소의 개수 
-cnt = count_by_range(array, x, x)
-
-if cnt == 0:
-    print(-1)
-else:
-    print(cnt)
+0
 
 
 # 두번째 풀이 -> 반복문을 이용한 이진탐색
